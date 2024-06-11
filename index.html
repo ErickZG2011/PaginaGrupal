@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link rel="icon" href="./src/tesla.png">
+    <!-- JS / LIBRERÍAS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+
+<body class="bg-white ">
+    <nav class="bg-white border-gray-200  fixed w-full z-50 start-0 top-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center">
+            <img src="./src/tesla.png" class="h-8 mr-3"/>
+            <span id="t1" class="self-center text-2xl font-semibold whitespace-nowrap ">Corporación Tesla</span>
+        </a>
+        
+        <div class="flex items-center md:order-2">
+            <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-language" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          </div>
+
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+            <li>
+              <a id="n1" href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Inicio</a>
+            </li>
+            <li>
+              <a id="n2" href="./secciones/concesionarios.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Concesionarios</a>
+            </li>
+            <li>
+              <a id="n3" href="./secciones/vehiculos.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Vehículos</a>
+            </li>
+            <li>
+              <a id="n4" href="./secciones/accesorios.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Accesorios</a>
+            </li>
+            <li>
+              <a id="n5" href="./secciones/sobrenosotros.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Sobre Nosotros</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+
+    <br>
+    <div id="default-carousel" class="relative w-full mt-10" data-carousel="static">
+      <div class="relative z-0 h-56 overflow-hidden rounded-lg md:h-96">
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./src/banner1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./src/banner2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./src/banner3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./src/banner4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./src/banner5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+      </div>
+      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse hidden lg:flex">
+          <button type="button" class="w-3 h-3 rounded-full"  data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full"  data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full"  data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full"  data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full"  data-carousel-slide-to="4"></button>
+      </div>
+      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+          <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+  </div>
+   <section class="bg-white mt-2 sm:mt-10">
+    <div class="gap-6 items-center px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-4 lg:px-6">
+        <video class="w-full h-auto max-w-full rounded-lg" controls>
+          <source src="./src/videoNosotros2.webm" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="mt-4 md:mt-0">
+            <h2 id="slogan" class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Descubre los mejores y más recientes lanzamientos al mercado!</h2>
+            <p id="sl2" class="mb-6 font-light text-gray-500 md:text-lg ">Disfruta de la experiencia de viajar en los autos de la compañía más reconocida a nivel mundial en un solo lugar y al precio que más se ajuste a ti, adquiere un auto Tesla!</p>
+            <a id="btn1" href="#" class="inline-flex justify-center items-center py-2.5 px-5 font-medium text-center text-base text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
+              Empezar
+              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
+          <div id="Precios"></div>
+        </div>
+    </div>
+</section>
+<br><br>
+
+<section class="mb-10">
+  <h1 id="m1" class="text-3xl text-center font-bold md:text-4xl text-gray-900">¡Modelos nuevos cada año!</h1>
+</section>
+<section class="bg-white">
+    <div class="block md:grid md:grid-cols-3 md:gap-12 ml-6 mr-6">
+      <div class="md:block grid grid-cols-2 gap-8">
+        <img src="./src/car1.png" class="rounded-lg mb-5 ml-4">
+        <div class="">
+          <h2 id="m2" class="text-2xl text-center font-bold text-gray-900">MINIVAN AVANZA</h1>
+            <p id="m3" class="mt-2 text-center font-light text-gray-900">Precio Sugerido <br> $19,020 ó S/71,705.40</p>
+          </div>
+      </div>
+      <div class="md:block grid grid-cols-2 gap-8">
+        <img src="./src/car2.png" class="rounded-lg mb-5 ml-4">
+        <div class="">
+          <h2 id="m4" class="text-2xl text-center font-bold text-gray-900">4RUNNER</h1>
+            <p id="m5" class="mt-2 text-center font-light text-gray-900">Precio Sugerido <br> $61,750 ó S/232,797.50</p>
+          </div>
+      </div>
+      <div class="md:block grid grid-cols-2 gap-8">
+        <img src="./src/car3.png" class="rounded-lg mb-5 ml-4">
+        <div class="">
+          <h2 id="m6" class="text-2xl text-center font-bold text-gray-900">AGYA</h1>
+            <p id="m7" class="mt-2 text-center font-light text-gray-900" id="AcercaDeNosotros">Precio Sugerido <br> $11,990 ó S/45,202.30</p>
+          </div>
+        </div>
+    </div>
+</section>
+
+  <section class="py-10 transition-colors duration-500 bg-white px-10">
+    <article class="lg:flex items-center p-10">
+        <div class="hidden lg:flex">
+            <ul class="px-10">
+                <li class="p-3 text-center">
+                    <div class="flex justify-center text-red-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                        </svg>          
+                    </div> 
+                    <p class="mt-4 font-semibold" id="m11">Instagram</p>
+                    <div class="contacto-txt-gray transition duration-500 text-sm text-gray-500">
+                        <p>@CorporacionTesla</p>
+                        <p>./CorporacionTesla</p>
+                    </div>                    
+                </li>
+                <li class="p-3 text-center">
+                    <div class="flex justify-center text-red-600">
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M 25 2 C 12.318 2 2 12.318 2 25 C 2 28.96 3.0228906 32.853062 4.9628906 36.289062 L 2.0371094 46.730469 C 1.9411094 47.073469 2.03325 47.440312 2.28125 47.695312 C 2.47225 47.892313 2.733 48 3 48 C 3.08 48 3.1612344 47.989703 3.2402344 47.970703 L 14.136719 45.271484 C 17.463719 47.057484 21.21 48 25 48 C 37.682 48 48 37.682 48 25 C 48 12.318 37.682 2 25 2 z M 16.642578 14 C 17.036578 14 17.428437 14.005484 17.773438 14.021484 C 18.136437 14.039484 18.624516 13.883484 19.103516 15.021484 C 19.595516 16.189484 20.775875 19.058563 20.921875 19.351562 C 21.069875 19.643563 21.168656 19.984047 20.972656 20.373047 C 20.776656 20.762047 20.678813 21.006656 20.382812 21.347656 C 20.086813 21.688656 19.762094 22.107141 19.496094 22.369141 C 19.200094 22.660141 18.892328 22.974594 19.236328 23.558594 C 19.580328 24.142594 20.765484 26.051656 22.521484 27.597656 C 24.776484 29.583656 26.679531 30.200188 27.269531 30.492188 C 27.859531 30.784188 28.204828 30.734703 28.548828 30.345703 C 28.892828 29.955703 30.024969 28.643547 30.417969 28.060547 C 30.810969 27.477547 31.204094 27.572578 31.746094 27.767578 C 32.288094 27.961578 35.19125 29.372062 35.78125 29.664062 C 36.37125 29.956063 36.766062 30.102703 36.914062 30.345703 C 37.062062 30.587703 37.062312 31.754234 36.570312 33.115234 C 36.078313 34.477234 33.717984 35.721672 32.583984 35.888672 C 31.565984 36.037672 30.277281 36.10025 28.863281 35.65625 C 28.006281 35.38625 26.907047 35.028734 25.498047 34.427734 C 19.575047 31.901734 15.706156 26.012047 15.410156 25.623047 C 15.115156 25.234047 13 22.46275 13 19.59375 C 13 16.72475 14.524406 15.314469 15.066406 14.730469 C 15.608406 14.146469 16.248578 14 16.642578 14 z"></path>
+                        </svg>                           
+                    </div> 
+                    <p class="mt-4 font-semibold" id="m12">WhatsApp</p>
+                    <div class="contacto-txt-gray transition duration-500 text-sm text-gray-500">
+                        <p>+0000 1234 5678</p>
+                        <p>+0000 4321 8765</p>
+                    </div>                    
+                </li>
+            </ul>
+        </div>
+        <div class="lg:px-20 space-y-6 lg:border-l-2 border-red-600">
+            <div>
+                <p class="text-xl font-extrabold text-red-600" id="m13">MANTENTE INFORMADO SOBRE NUEVAS TENDENCIAS EN AUTOS</p>
+                <p id="m14">Completa el formulario a continuación y recibe las mejores promociones y ofertas. ¡Gracias por confiar en nosotros!</p>
+            </div>
+            <div class="flex relative">
+                <input id="usuario" type="text" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-600 peer">
+                <label for="usuario" class="text-gray-500 absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:text-red-600 peer-focus:-top-4 font-semibold transition-all duration-500" id="m16">Ingresa tu nombre</label>
+            </div>
+            <div class="flex relative">
+                <input id="correo" type="text" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-600 peer">
+                <label for="correo" class="text-gray-500 absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:text-red-600 peer-focus:-top-4 font-semibold transition-all duration-500" id="m17">Ingresa tu correo</label>
+            </div>
+            <div class="flex relative">
+                <input id="telefono" type="text" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-600 peer">
+                <label for="telefono" class="text-gray-500 absolute left-0 top-1 cursor-text peer-focus:text-xs peer-focus:text-red-600 peer-focus:-top-4 font-semibold transition-all duration-500" id="m18">Ingresa tu teléfono</label>
+            </div>
+            <div class="space-y-4">
+                <button class="py-1 px-4 bg-black font-bold text-white rounded-xl" id="m19">Enviar</button>
+            </div>
+        </div>
+        <div class="lg:hidden">
+            <ul class="py-6 flex flex-wrap">
+                <li class="p-3 text-center grow">
+                    <div class="grid grid-cols-1 place-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
+                        </svg>                        
+                    </div> 
+                    <p id="m20" class="font-semibold">Instagram</p>
+                    <div class="text-sm text-gray-500">
+                      <p>@CorporacionTesla</p>
+                      <p>./CorporacionTesla</p>
+                    </div>                    
+                </li>
+                <li class="p-3 text-center grow">
+                    <div class="grid grid-cols-1 place-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 50 50">
+                        <path d="M 25 2 C 12.318 2 2 12.318 2 25 C 2 28.96 3.0228906 32.853062 4.9628906 36.289062 L 2.0371094 46.730469 C 1.9411094 47.073469 2.03325 47.440312 2.28125 47.695312 C 2.47225 47.892313 2.733 48 3 48 C 3.08 48 3.1612344 47.989703 3.2402344 47.970703 L 14.136719 45.271484 C 17.463719 47.057484 21.21 48 25 48 C 37.682 48 48 37.682 48 25 C 48 12.318 37.682 2 25 2 z M 16.642578 14 C 17.036578 14 17.428437 14.005484 17.773438 14.021484 C 18.136437 14.039484 18.624516 13.883484 19.103516 15.021484 C 19.595516 16.189484 20.775875 19.058563 20.921875 19.351562 C 21.069875 19.643563 21.168656 19.984047 20.972656 20.373047 C 20.776656 20.762047 20.678813 21.006656 20.382812 21.347656 C 20.086813 21.688656 19.762094 22.107141 19.496094 22.369141 C 19.200094 22.660141 18.892328 22.974594 19.236328 23.558594 C 19.580328 24.142594 20.765484 26.051656 22.521484 27.597656 C 24.776484 29.583656 26.679531 30.200188 27.269531 30.492188 C 27.859531 30.784188 28.204828 30.734703 28.548828 30.345703 C 28.892828 29.955703 30.024969 28.643547 30.417969 28.060547 C 30.810969 27.477547 31.204094 27.572578 31.746094 27.767578 C 32.288094 27.961578 35.19125 29.372062 35.78125 29.664062 C 36.37125 29.956063 36.766062 30.102703 36.914062 30.345703 C 37.062062 30.587703 37.062312 31.754234 36.570312 33.115234 C 36.078313 34.477234 33.717984 35.721672 32.583984 35.888672 C 31.565984 36.037672 30.277281 36.10025 28.863281 35.65625 C 28.006281 35.38625 26.907047 35.028734 25.498047 34.427734 C 19.575047 31.901734 15.706156 26.012047 15.410156 25.623047 C 15.115156 25.234047 13 22.46275 13 19.59375 C 13 16.72475 14.524406 15.314469 15.066406 14.730469 C 15.608406 14.146469 16.248578 14 16.642578 14 z"></path>
+                        </svg>                             
+                    </div> 
+                    <p id="m21" class="font-semibold">WhatssApp</p>
+                    <div class="text-sm text-gray-500">
+                        <p>+0000 1234 5678</p>
+                        <p>+0000 4321 8765</p>
+                    </div>                    
+                </li>
+            </ul>
+        </div>
+    </article>
+  </section>
+
+  <section class="overflow-hidden">
+    <p class="text-center text-gray-800 text-2xl md:text-3xl font-semibold">NOTICIAS</p>
+    <p class="mt-2 text-center text-gray-900 mb-10">Entérate cuales son las últimas tendencias en el rubro automotriz de la compañía</p>
+    <!-- Swiper -->
+    <div class="container">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide grid grid-rows-1 place-items-center text-center">
+                    <img src="https://phantom-elmundo.unidadeditorial.es/f1767c40e60db4bf62f0cd2d41532b0a/crop/102x0/614x512/resize/250/f/webp/assets/multimedia/imagenes/2024/05/17/17159668815668.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title font-medium mt-5">
+                            <h4>Milei y Musk: lo que el litio ha unido... ¿que no lo separe el hombre?</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Elon Musk y Javier Milei ven una relación mutuamente beneficiosa: Tesla necesita litio para sus coches eléctricos y el norte de Argentina tiene grandes reservas de ese metal.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide grid grid-rows-1 place-items-center text-center">
+                    <img src="https://phantom-elmundo.unidadeditorial.es/39c9018c100290377d24d17651161631/crop/334x0/1666x1332/resize/250/f/webp/assets/multimedia/imagenes/2023/05/01/16829581654034.jpg"
+                    alt="">
+                <div class="card-description mt-5">
+                    <div class="card-title font-medium">
+                        <h4>A Tesla le sale redonda la jugada en Europa</h4>
+                    </div>
+                    <div class="card-text">
+                        <p>La marca estadounidense coloca al Tesla Model Y como el coche más vendido en el primer trimestre gracias a la bajada de precios y al empuje de la factoría de Berlín.</p>
+                    </div>
+                </div>
+            </div>
+                <div class="swiper-slide grid grid-rows-1 place-items-center text-center">
+                    <img src="https://phantom-elmundo.unidadeditorial.es/34c1ebfd7f7d02b7f86fae2e7a047ec8/crop/167x0/857x690/resize/250/f/webp/assets/multimedia/imagenes/2023/12/13/17024813018926.jpg"
+                    alt="">
+                <div class="card-description mt-5">
+                    <div class="card-title font-medium">
+                        <h4>Tesla llama a revisión a 2 millones de vehículos en EEUU</h4>
+                    </div>
+                    <div class="card-text">
+                        <p>Tesla ha llamado a revisión a unos dos millones de vehículos en Estados Unidos por un riesgo relacionado con su sistema de conducción asistida, informaron las autoridades este miércoles.</p>
+                    </div>
+                </div>
+            </div>
+                <div class="swiper-slide grid grid-rows-1 place-items-center text-center">
+                    <img src="https://phantom-elmundo.unidadeditorial.es/ee0d849b1c99e1d9403392adefa077df/crop/558x0/2514x1956/resize/250/f/webp/assets/multimedia/imagenes/2023/12/01/17013909642027.jpg"
+                    alt="">
+                <div class="card-description mt-5">
+                    <div class="card-title font-medium">
+                        <h4>El Cybertruck de Tesla será un 50% más caro que lo anunciado inicialmente</h4>
+                    </div>
+                    <div class="card-text">
+                        <p>El vehículo pesado de aspecto futurista llega dos años más tarde de lo prometido y a un precio muy superior al anunciado inicialmente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide grid grid-rows-1 place-items-center text-center">
+                <img src="https://phantom-elmundo.unidadeditorial.es/833e272780268a670ae4a9dfd67d3485/crop/513x0/2559x2046/resize/250/f/webp/assets/multimedia/imagenes/2024/04/15/17131810053428.jpg"
+                    alt="">
+                <div class="card-description mt-5">
+                    <div class="card-title font-medium">
+                        <h4>Tesla despedirá a más del 10% de su plantilla mundial</h4>
+                    </div>
+                    <div class="card-text">
+                        <p>Tesla planea recortar más del 10% de su plantilla laboral a nivel global debido a la "duplicidad de roles y funciones laborales en ciertas áreas", según un correo enviado por su CEO.</p>
+                    </div>
+            </div>
+        </div>
+                <div class="swiper-slide grid grid-rows-1 place-items-center text-center">
+                    <img src="https://phantom-elmundo.unidadeditorial.es/ef9607469e898fac6e76ca03cfa23d67/crop/470x0/1934x1464/resize/250/f/webp/assets/multimedia/imagenes/2024/02/03/17069813330298.jpg"
+                    alt="">
+                <div class="card-description mt-5">
+                    <div class="card-title font-medium">
+                        <h4>La carrera por el coche eléctrico barato: (casi) todos contra China</h4>
+                    </div>
+                    <div class="card-text">
+                        <p>La llegada de estos modelos es clave de cara al usuario y para despejar las dudas que empieza a despertar la electrificación. Tesla, que tendrá uno en 2025, ha pedido 'frenar' a los chinos.</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    
+    <footer class="bg-white mt-4">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="#" class="flex items-center">
+                    <img src="https://www.motor16.com/wp-content/webpc-passthru.php?src=https://www.motor16.com/wp-content/uploads/2022/02/tesla-motors-60.png&nocache=1" class="h-8 mr-3" alt="FlowBite Logo" />
+                    <span id="t2" class="self-center text-base md:text-2xl font-semibold">Corporación Tesla</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 id="m27" class="mb-6 text-sm font-semibold text-gray-900 uppercase">Fuentes</h2>
+                    <ul class="text-gray-500 font-medium">
+                        <li class="mb-4">
+                            <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                        </li>
+                        <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 id="m28" class="mb-6 text-sm font-semibold text-gray-900 uppercase">Síguenos</h2>
+                    <ul class="text-gray-500 font-medium">
+                        <li class="mb-4">
+                            <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 id="m29" class="mb-6 text-sm font-semibold text-gray-900 uppercase">Política</h2>
+                    <ul class="text-gray-500 font-medium">
+                        <li class="mb-4">
+                            <a id="m30" href="#" class="hover:underline">Política de Privacidad</a>
+                        </li>
+                        <li>
+                            <a id="m31" href="#" class="hover:underline">Términos &amp; Condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center">© 2024 <a href="file:///C:/Users/pc/Documents/Dise%C3%B1o%20Web/Definitiva2/src/index.html" class="hover:underline">Corporacion Tesla™</a>. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                <a href="#" class="text-gray-500 hover:text-gray-900">
+                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                          <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                      </svg>
+                    <span class="sr-only">Facebook page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">
+                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                          <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                      </svg>
+                    <span class="sr-only">Discord community</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">
+                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                      <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                  </svg>
+                    <span class="sr-only">Twitter page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">
+                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="sr-only">GitHub account</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">
+                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                  </svg>
+                    <span class="sr-only">Dribbble account</span>
+                </a>
+            </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
